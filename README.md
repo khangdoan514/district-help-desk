@@ -1,6 +1,3 @@
-<!-- ==================================================================================================== -->
-<!-- =========================================== Description ============================================ -->
-
 # **🧑🏻‍💻 Help Desk System 🧑🏻‍💻**
 
 This project is a comprehensive, district-wide help desk application designed to revolutionize how educational institutions manage technical support requests. Built specifically for school districts, this system enables teachers, administrative staff, and faculty to submit, track, and manage technical support tickets through an intuitive, user-friendly interface.
@@ -8,9 +5,6 @@ This project is a comprehensive, district-wide help desk application designed to
 The application addresses critical challenges in educational IT support, including slow response times, inefficient ticket routing, and lack of transparency in support request status.
 
 By centralizing all technical support needs into a single platform, the system significantly improves operational efficiency and ensures that critical technical issues are resolved promptly, minimizing disruptions to the educational process.
-
-<!-- ==================================================================================================== -->
-<!-- ======================================= System Architecture ======================================== -->
 
 ## **System Architecture**
 
@@ -60,16 +54,13 @@ By centralizing all technical support needs into a single platform, the system s
 
 - **RESTful APIs:** Clean, standardized interfaces for future mobile applications
 
-## **Installation**
+## **Project Setup**
+
+#### **1. Installation**
 
 - Navigate to the [Documentation](helpdesk/docs/installation/README.md)
 
-<!-- ==================================================================================================== -->
-<!-- ========================================== Project Setup =========================================== -->
-
-## **Project Setup**
-
-#### **1. Clone Repository**
+#### **2. Clone Repository**
 
 ```bash
 # Clone
@@ -79,7 +70,7 @@ git clone https://github.com/khangdoan514/district-help-desk
 cd helpdesk
 ```
 
-#### **2. Environment Setup**
+#### **3. Environment Setup**
 
 1. Ensure [Java Development Kit (JDK) 23](https://www.oracle.com/java/technologies/downloads/) (or higher) is installed
 
@@ -89,7 +80,7 @@ cd helpdesk
 
 4. Obtain MongoDB Atlas connection credentials
 
-#### **3. Database Configuration**
+#### **4. Database Configuration**
 
 - Create `src/main/resources/application.properties` and add the following lines:
 
@@ -99,7 +90,7 @@ logging.level.org.mongodb.driver=WARN
 logging.level.org.springframework.data.mongodb=INFO
 ```
 
-#### **4. Build and Run**
+#### **5. Build and Run**
 
 ```bash
 # Clean and compile the project
@@ -109,16 +100,13 @@ mvn clean compile
 mvn spring-boot:run
 ```
 
-#### **5. Verify Installation**
+#### **6. Verify Installation**
 
 - Access the following endpoints to verify system status:
 
     - **Health Check:** `http://localhost:8080/health`
 
     - **Web Interface:** `http://localhost:8080`
-
-<!-- ==================================================================================================== -->
-<!-- ======================================== Project Structure ========================================= -->
 
 ## **Project Structure**
 
