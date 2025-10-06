@@ -85,7 +85,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
-			<version>4.0.0-M1</version>	
 		</dependency>
 	</dependencies>
 	<build>
@@ -97,14 +96,14 @@
 			</plugin>
 
 			<!-- JavaFX plugin -->
-			<plugin>
+			<!-- <plugin>
 				<groupId>org.openjfx</groupId>
 				<artifactId>javafx-maven-plugin</artifactId>
 				<version>0.0.8</version>
 				<configuration>
-					<mainClass>org.utd.planner.DesktopApp</mainClass>
+					<mainClass>dev.khang.helpdesk.DesktopApplicaton</mainClass>
 				</configuration>
-			</plugin>
+			</plugin> -->
 
             <!-- Compiler plugin -->
             <plugin>
@@ -120,14 +119,14 @@
 		<profile>
 			<id>web</id>
 			<properties>
-				<mainClass>dev.khang.helpdesk.WebApplication</mainClass>
+				<mainClass>dev.khang.helpdesk.Application</mainClass>
 			</properties>
 		</profile>
-		<profile>
+		<!-- <profile>
 			<id>desktop</id>
 			<properties>
 				<mainClass>dev.khang.helpdesk.DesktopApplication</mainClass>
 			</properties>
-		</profile>
+		</profile> -->
 	</profiles>
 </project>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>District Help Desk</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <div class="container">
+        <h1>District Help Desk System</h1>
+        
+        <div class="status">
+            <h2>System Status</h2>
+            <p><strong>Database: </strong>CONNECTED</p>
+            <p><strong>Server: </strong>RUNNING</p>
+            <p><strong>Ready for development!</strong></p>
+        </div>
+        
+        <div class="links">
+            <a href="/health">Health Check (JSON API)</a>
+            <p style="text-align: center; margin-top: 30px; opacity: 0.8;">
+                Built with Spring Boot & MongoDB Atlas
+            </p>
+        </div>
+    </div>
+</body>
+</html>
