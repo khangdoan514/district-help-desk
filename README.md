@@ -1,3 +1,6 @@
+<!-- ==================================================================================================== -->
+<!-- =========================================== Description ============================================ -->
+
 # **🧑🏻‍💻 Help Desk System 🧑🏻‍💻**
 
 This project is a comprehensive, district-wide help desk application designed to revolutionize how educational institutions manage technical support requests. Built specifically for school districts, this system enables teachers, administrative staff, and faculty to submit, track, and manage technical support tickets through an intuitive, user-friendly interface.
@@ -6,7 +9,10 @@ The application addresses critical challenges in educational IT support, includi
 
 By centralizing all technical support needs into a single platform, the system significantly improves operational efficiency and ensures that critical technical issues are resolved promptly, minimizing disruptions to the educational process.
 
-## **🛠️ Technology Stack 🛠️**
+<!-- ==================================================================================================== -->
+<!-- ======================================= System Architecture ======================================== -->
+
+## **System Architecture**
 
 #### **1. Backend & Core Framework**
 
@@ -54,36 +60,160 @@ By centralizing all technical support needs into a single platform, the system s
 
 - **RESTful APIs:** Clean, standardized interfaces for future mobile applications
 
-## **🏗️ System Architecture 🏗️**
+<!-- ==================================================================================================== -->
+<!-- ====================================== Installation for macOS ====================================== -->
 
-#### **1. Multi-Tier Architecture**
+## **Installation for macOS**
 
-#### **2. Component Structure**
+#### 1. [Java Development Kit (JDK) 23](https://www.oracle.com/java/technologies/downloads/) (or higher)
 
-- Desktop Client: JavaFX application for IT administrators and support staff
+- Visit the [Oracle JDK download page](https://www.oracle.com/java/technologies/downloads/) and choose the appropriate installer for your operating system
 
-- Web Interface: Browser-based access for teachers and general staff
+- Download the JDK and run the installer (use defaults)
 
-- REST API: Spring Boot backend serving both frontend interfaces
-
-- Cloud Database: MongoDB Atlas providing reliable, scalable data storage
-
-## **🚀 Quick Start 🚀**
-
-#### **1. Clone Repositor**
+- List all installed JDKs
 
 ```bash
+/usr/libexec/java_home -V
+```
+
+- Example output
+
+```bash
+Matching Java Virtual Machines (1):
+    24.0.2 (arm64) "Oracle Corporation" - "Java SE 24.0.2" /Library/Java/JavaVirtualMachines/jdk-24.jdk/Contents/Home
+```
+
+- Restart the terminal and verify
+
+```bash
+java -version
+```
+
+#### 2. [Apache Maven 3.9+](https://maven.apache.org)
+
+- Visit the [Maven download page](https://maven.apache.org/download.cgi)
+
+- Under **Files**, download `Binary zip archive (apache-maven-3.9.X-bin.zip)` and unzip
+
+- Add to `~/.zshrc` or `~/.bashrc`
+
+```bash
+export MAVEN_HOME=/opt/apache-maven-3.9.X       # or /opt/maven if symlink
+export PATH=$MAVEN_HOME/bin:$PATH
+```
+
+- Reload
+
+```bash
+source ~/.zshrc     # or ~/.bashrc
+```
+
+- Restart the terminal and verify
+
+```bash
+mvn -v
+```
+
+<!-- ==================================================================================================== -->
+<!-- ===================================== Installation for Windows ===================================== -->
+
+## **Installation for Windows**
+
+#### 1. [Java Development Kit (JDK) 23](https://www.oracle.com/java/technologies/downloads/) (or higher)
+
+- Visit the [Oracle JDK download page](https://www.oracle.com/java/technologies/downloads/) and choose the appropriate installer for your operating system
+
+- Download the JDK and run the installer (use defaults)
+
+- Save the folder to `C:\Program Files\Java\jdk-23` (replace "23" with your version)
+
+- Open **Start Menu** → Search for **Edit the system environment variables**
+
+- Select **Environment Variables**. Under **System variables**
+  
+    - Select **New**
+        
+        - Variable name: `JAVA_HOME`
+
+        - Variable value: `C:\Program Files\Java\jdk-23` (replace "23" with your version)
+    
+    - Find `Path` variable
+    
+        - Select **Edit** → Select **New** → Add `%JAVA_HOME%\bin`
+
+- Restart the terminal and verify
+
+```bash
+java -version
+```
+
+#### 2. [Apache Maven 3.9+](https://maven.apache.org)
+
+- Visit the [Maven download page](https://maven.apache.org/download.cgi)
+
+- Under **Files**, download `Binary zip archive (apache-maven-3.9.X-bin.zip)` and extract
+
+- Save the folder to `C:\Program Files\apache-maven-3.9.X` (replace "X" with your version)
+
+- Open **Start Menu** → Search for **Edit the system environment variables**
+
+- Select **Environment Variables**. Under **System variables**
+  
+    - Select **New**
+        
+        - Variable name: `MAVEN_HOME`
+
+        - Variable value: `C:\Program Files\apache-maven-3.9.X` (replace "X" with your version)
+    
+    - Find `Path` variable
+    
+        - Select **Edit** → Select **New** → Add `%MAVEN_HOME%\bin`
+
+- Restart the terminal and verify
+
+```bash
+mvn -v
+```
+
+## Installation for both macOS and Windows
+
+#### 1. [Git](https://git-scm.com)
+
+- Visit the [Git download page](https://git-scm.com/downloads) and choose the appropriate installer for your operating system
+
+- Download and run the installer (use defaults)
+
+#### 2. [SceneBuilder](https://gluonhq.com/products/scene-builder/)
+
+- Visit the [SceneBuilder download page](https://gluonhq.com/products/scene-builder/) and choose the appropriate installer for your operating system
+
+- Download and run the installer (use defaults)
+
+<!-- ==================================================================================================== -->
+<!-- ========================================== Project Setup =========================================== -->
+
+## **Project Setup**
+
+#### **1. Clone Repository**
+
+```bash
+# Clone
 git clone https://github.com/khangdoan514/district-help-desk
+
+# Change working directory
 cd helpdesk
 ```
 
 #### **2. Environment Setup**
 
-- Ensure Java 21+ is installed
+1. Ensure [Java Development Kit (JDK) 23](https://www.oracle.com/java/technologies/downloads/) (or higher) is installed
 
-- Verify Maven 3.6+ is available
+2. Verify [Apache Maven 3.9+](https://maven.apache.org) is available
 
-- Obtain MongoDB Atlas connection credentials
+3. Download [SceneBuilder](https://gluonhq.com/products/scene-builder/)
+
+4. Obtain MongoDB Atlas connection credentials
 
 #### **3. Database Configuration**
 
@@ -111,4 +241,7 @@ mvn spring-boot:run
 
     - **Health Check:** `http://localhost:8080/health`
 
-    - **Web Interface:** `http://localhost:8080/`
+    - **Web Interface:** `http://localhost:8080`
+
+<!-- ==================================================================================================== -->
+<!-- ======================================== Project Structure ========================================= -->
