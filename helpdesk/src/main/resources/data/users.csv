@@ -1,0 +1,11 @@
+user_id,user_name,user_email,user_password,is_admin,user_queue
+user_001,John Smith,john.smith@school.edu,$2a$10$hashedpassword1,false,Software Support
+user_002,Maria Garcia,maria.garcia@school.edu,$2a$10$hashedpassword2,false,Hardware Support
+user_003,David Johnson,david.johnson@school.edu,$2a$10$hashedpassword3,true,Network Support
+user_004,Sarah Wilson,sarah.wilson@school.edu,$2a$10$hashedpassword4,false,Software Support
+user_005,Robert Brown,robert.brown@school.edu,$2a$10$hashedpassword5,false,Account Support
+user_006,Lisa Davis,lisa.davis@school.edu,$2a$10$hashedpassword6,true,Hardware Support
+user_007,Michael Miller,michael.miller@school.edu,$2a$10$hashedpassword7,false,Software Support
+user_008,Jennifer Taylor,jennifer.taylor@school.edu,$2a$10$hashedpassword8,false,Network Support
+user_009,James Anderson,james.anderson@school.edu,$2a$10$hashedpassword9,true,Account Support
+user_010,Emily Thomas,emily.thomas@school.edu,$2a$10$hashedpassword10,false,Hardware Support

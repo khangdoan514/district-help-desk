@@ -1,0 +1,6 @@
+queue_id,queue_name,description
+queue_001,Software Support,Operating system, application software, and program issues
+queue_002,Hardware Support,Computer hardware, printers, projectors, and physical equipment
+queue_003,Network Support,Internet, WiFi, network connectivity, and email issues
+queue_004,Account Support,Password resets, login problems, and account access issues
+queue_005,Classroom Tech,Smartboards, audio systems, and classroom technology

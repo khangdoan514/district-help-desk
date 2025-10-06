@@ -1,0 +1,11 @@
+ticket_id,user_id,user_name,user_email,ticket_room,ticket_campus,ticket_queue,ticket_priority,ticket_description,ticket_open_date,ticket_closed_date
+ticket_001,user_001,John Smith,john.smith@school.edu,Room 205,Main Campus,Software Support,HIGH,Projector not displaying on classroom computer,2024-01-15 09:00:00,
+ticket_002,user_002,Maria Garcia,maria.garcia@school.edu,Room 118,North Campus,Hardware Support,MEDIUM,Printer in staff room is jammed,2024-01-15 09:15:00,2024-01-15 11:30:00
+ticket_003,user_003,David Johnson,david.johnson@school.edu,Library,Main Campus,Network Support,CRITICAL,No internet connection in library,2024-01-15 09:30:00,
+ticket_004,user_004,Sarah Wilson,sarah.wilson@school.edu,Room 304,South Campus,Software Support,LOW,Microsoft Office activation required,2024-01-15 10:00:00,2024-01-15 14:20:00
+ticket_005,user_005,Robert Brown,robert.brown@school.edu,Office 12,Main Campus,Account Support,HIGH,Cannot login to gradebook system,2024-01-15 10:30:00,
+ticket_006,user_006,Lisa Davis,lisa.davis@school.edu,Room 201,North Campus,Hardware Support,MEDIUM,Computer monitor flickering,2024-01-15 11:00:00,2024-01-15 16:45:00
+ticket_007,user_007,Michael Miller,michael.miller@school.edu,Room 105,Main Campus,Software Support,LOW,Need Adobe Reader installed,2024-01-15 11:30:00,
+ticket_008,user_008,Jennifer Taylor,jennifer.taylor@school.edu,Lab 3,South Campus,Network Support,CRITICAL,WiFi down in computer lab,2024-01-15 12:00:00,
+ticket_009,user_009,James Anderson,james.anderson@school.edu,Auditorium,Main Campus,Account Support,MEDIUM,Email not syncing on phone,2024-01-15 13:00:00,2024-01-15 15:30:00
+ticket_010,user_010,Emily Thomas,emily.thomas@school.edu,Room 402,North Campus,Hardware Support,HIGH,Smartboard not responding to touch,2024-01-15 13:30:00,
