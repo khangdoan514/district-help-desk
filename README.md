@@ -10,7 +10,7 @@ By centralizing all technical support needs into a single platform, the system s
 
 #### **1. Backend & Core Framework**
 
-- **Java 21:** Primary programming language for robust enterprise application development
+- **Java 23:** Primary programming language for robust enterprise application development
 
 - **Spring Boot 3.5.6:** Comprehensive framework for enterprise-grade application development
 
@@ -111,14 +111,14 @@ mvn spring-boot:run
 ## **Project Structure**
 
 ```bash
-district-help-desk
+district-help-desk/
 ├── CODE_OF_CONDUCT.md
 ├── LICENSE
 ├── README.md
-└── helpdesk/                                               # Main working directory
+└── helpdesk/                                           # Main working directory
     ├── HELP.md
-    ├── pom.xml                                             # Manages dependencies & builds configurations
-    ├── docs/                                               # Root documentation directory
+    ├── pom.xml                                         # Manages dependencies & builds configurations
+    ├── docs/                                           # Root documentation directory
     │   ├── api/
     │   ├── database/
     │   └── installation/
@@ -129,24 +129,24 @@ district-help-desk
     │   │   │   └── dev/
     │   │   │       └── khang/
     │   │   │           └── helpdesk/
-    │   │   │               ├── Application.java            # Spring Boot entry point
-    │   │   │               ├── controller/                 # Handles HTTP requests (@Controller, @RestController)
-    │   │   │               ├── model/                      # Defines data entities (@Entity)
-    │   │   │               ├── repository/                 # Handles data access (@Repository)
-    │   │   │               └── services/                   # Manages business logic (@Service)
+    │   │   │               ├── Application.java        # Spring Boot entry point
+    │   │   │               ├── controller/             # Handles HTTP requests (@Controller, @RestController)
+    │   │   │               ├── model/                  # Defines data entities (@Entity)
+    │   │   │               ├── repository/             # Handles data access (@Repository)
+    │   │   │               └── services/               # Manages business logic (@Service)
     │   │   │
     │   │   └── resources/
-    │   │       ├── application.properties                  # Spring Boot configurations
+    │   │       ├── application.properties              # Spring Boot configurations
     │   │       ├── static/
     │   │       │   ├── css/
     │   │       │   ├── img/
     │   │       │   └── js/
     │   │       │
     │   │       └── templates/
-    │   │           ├── fragments/                          # Thymeleaf
-    │   │           └── index.html                          # Main html homepage
+    │   │           ├── fragments/                      # Thymeleaf
+    │   │           └── index.html                      # Main html homepage
     │   │
-    │   └── test/                                           # Unit & integration tests
+    │   └── test/                                       # Unit & integration tests
     │
-    └── target/                                             # Auto-generated build output
+    └── target/                                         # Auto-generated build output
 ```
