@@ -58,7 +58,7 @@ By centralizing all technical support needs into a single platform, the system s
 
 #### **1. Installation**
 
-- Navigate to the [Documentation](helpdesk/docs/installation/README.md)
+- Navigate to the [Installation Documentation](helpdesk/docs/installation/README.md)
 
 #### **2. Clone Repository**
 
