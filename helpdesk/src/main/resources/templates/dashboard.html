@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Help Desk Dashboard</title>
+    <link rel="stylesheet" th:href="@{/css/dashboard.css}">
+</head>
+<body>
+    <div class="dashboard">
+        <div class="header">
+            <h1>Assistly</h1>
+            <p>Welcome to your dashboard</p>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-card user-stat">
+                <h3>Users</h3>
+                <div class="stat-number" th:text="${userCount} ?: '10'">10</div>
+                <p>Total users and staff</p>
+            </div>
+            <div class="stat-card queue-stat">
+                <h3>Queues</h3>
+                <div class="stat-number" th:text="${queueCount} ?: '5'">5</div>
+                <p>Support queues</p>
+            </div>
+            <div class="stat-card ticket-stat">
+                <h3>Tickets</h3>
+                <div class="stat-number" th:text="${ticketCount} ?: '15'">15</div>
+                <p>Active tickets</p>
+            </div>
+        </div>
+        
+        <div class="status">
+            <p>Database Status: <span th:text="${databaseStatus} ?: 'CONNECTED'">CONNECTED</span></p>
+        </div>
+    </div>
+</body>
+</html>
