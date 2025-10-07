@@ -1,6 +1,8 @@
-# **🧑🏻‍💻 Help Desk System 🧑🏻‍💻**
+# **🧑🏻‍💻 Assistly 🧑🏻‍💻**
 
-This project is a comprehensive, district-wide help desk application designed to revolutionize how educational institutions manage technical support requests. Built specifically for school districts, this system enables teachers, administrative staff, and faculty to submit, track, and manage technical support tickets through an intuitive, user-friendly interface.
+*Efficient Support Routing · Ticket Tracking · Educational Operations*
+
+Assistly is a comprehensive, district-wide help desk application designed to revolutionize how educational institutions manage technical support requests. Built specifically for school districts, this system enables teachers, administrative staff, and faculty to submit, track, and manage technical support tickets through an intuitively, friendly user interface.
 
 The application addresses critical challenges in educational IT support, including slow response times, inefficient ticket routing, and lack of transparency in support request status.
 
